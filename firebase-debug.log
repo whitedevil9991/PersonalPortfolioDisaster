@@ -1,0 +1,203 @@
+[debug] [2023-07-02T13:31:39.502Z] ----------------------------------------------------------------------
+[debug] [2023-07-02T13:31:39.504Z] Command:       D:\Local Disk(C) in D\nodejs\node.exe C:\Users\revan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-07-02T13:31:39.505Z] CLI Version:   12.4.2
+[debug] [2023-07-02T13:31:39.505Z] Platform:      win32
+[debug] [2023-07-02T13:31:39.505Z] Node Version:  v20.0.0
+[debug] [2023-07-02T13:31:39.505Z] Time:          Sun Jul 02 2023 19:01:39 GMT+0530 (India Standard Time)
+[debug] [2023-07-02T13:31:39.505Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-02T13:31:39.608Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rules"}
+[debug] [2023-07-02T13:31:39.612Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-02T13:31:39.612Z] > authorizing via signed-in user (revanth.pilli@gmail.com)
+[debug] [2023-07-02T13:31:39.613Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rules"}
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\git\portfolio
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-07-02T13:31:42.888Z] Using project from CLI flag: first-fcbd9
+[debug] [2023-07-02T13:31:42.889Z] > refreshing access token with scopes: []
+[debug] [2023-07-02T13:31:42.890Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-07-02T13:31:42.890Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-02T13:31:43.239Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-07-02T13:31:43.239Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-02T13:31:43.260Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/first-fcbd9 [none]
+[debug] [2023-07-02T13:31:44.030Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/first-fcbd9 200
+[debug] [2023-07-02T13:31:44.030Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/first-fcbd9 {"projectId":"first-fcbd9","projectNumber":"35706954086","displayName":"Revant's portfolio","name":"projects/first-fcbd9","resources":{"hostingSite":"first-fcbd9","realtimeDatabaseInstance":"first-fcbd9-default-rtdb"},"state":"ACTIVE","etag":"1_583b3512-9f61-4dd0-9479-ec51afdd9a2d"}
+[info] i  Using project first-fcbd9 (Revant's portfolio) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-07-02T13:31:44.037Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/first-fcbd9/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-07-02T13:31:44.037Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/first-fcbd9/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/first-fcbd9
+[debug] [2023-07-02T13:31:46.003Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/first-fcbd9/services/firebasedatabase.googleapis.com 200
+[debug] [2023-07-02T13:31:46.003Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/first-fcbd9/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-07-02T13:31:46.004Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/first-fcbd9/locations/-/instances/first-fcbd9-default-rtdb [none]
+[debug] [2023-07-02T13:31:47.707Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/first-fcbd9/locations/-/instances/first-fcbd9-default-rtdb 200
+[debug] [2023-07-02T13:31:47.707Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/first-fcbd9/locations/-/instances/first-fcbd9-default-rtdb {"name":"projects/35706954086/locations/asia-southeast1/instances/first-fcbd9-default-rtdb","project":"projects/35706954086","databaseUrl":"https://first-fcbd9-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-07-02T13:31:47.712Z] >>> [apiv2][query] GET https://first-fcbd9-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2023-07-02T13:31:48.118Z] <<< [apiv2][status] GET https://first-fcbd9-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2023-07-02T13:31:48.118Z] <<< [apiv2][body] GET https://first-fcbd9-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[debug] [2023-07-02T13:31:48.381Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received an instance of Object
+    at new NodeError (node:internal/errors:399:5)
+    at validateString (node:internal/validators:163:11)
+    at Object.join (node:path:433:7)
+    at Config.path (C:\Users\revan\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:123:45)
+    at Config.writeProjectFile (C:\Users\revan\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:152:32)
+    at writeDBRules (C:\Users\revan\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:33:12)
+    at doSetup (C:\Users\revan\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:123:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async init (C:\Users\revan\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:41:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-02T13:33:17.890Z] ----------------------------------------------------------------------
+[debug] [2023-07-02T13:33:17.892Z] Command:       D:\Local Disk(C) in D\nodejs\node.exe C:\Users\revan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-07-02T13:33:17.892Z] CLI Version:   12.4.2
+[debug] [2023-07-02T13:33:17.892Z] Platform:      win32
+[debug] [2023-07-02T13:33:17.892Z] Node Version:  v20.0.0
+[debug] [2023-07-02T13:33:17.893Z] Time:          Sun Jul 02 2023 19:03:17 GMT+0530 (India Standard Time)
+[debug] [2023-07-02T13:33:17.893Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-02T13:33:17.957Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rules"}
+[debug] [2023-07-02T13:33:17.960Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-02T13:33:17.960Z] > authorizing via signed-in user (revanth.pilli@gmail.com)
+[debug] [2023-07-02T13:33:17.961Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rules"}
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\git\portfolio
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-07-02T13:33:19.309Z] Using project from CLI flag: first-fcbd9
+[debug] [2023-07-02T13:33:19.312Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/first-fcbd9 [none]
+[debug] [2023-07-02T13:33:19.901Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/first-fcbd9 200
+[debug] [2023-07-02T13:33:19.902Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/first-fcbd9 {"projectId":"first-fcbd9","projectNumber":"35706954086","displayName":"Revant's portfolio","name":"projects/first-fcbd9","resources":{"hostingSite":"first-fcbd9","realtimeDatabaseInstance":"first-fcbd9-default-rtdb"},"state":"ACTIVE","etag":"1_583b3512-9f61-4dd0-9479-ec51afdd9a2d"}
+[info] i  Using project first-fcbd9 (Revant's portfolio) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-07-02T13:33:27.335Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-07-02T13:33:27.550Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-07-02T13:33:27.550Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.23.0","browserURL":"https://www.gstatic.com/firebasejs/9.23.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.23.0/firebase.tgz"},"live":{"version":"9.23","browserURL":"https://www.gstatic.com/firebasejs/live/9.23/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.23/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.23.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.23.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.23.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.23.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.23.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.23.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.23.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.23.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.23.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.23.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.memory.js"}}
+[info] +  Wrote yes/index.html 
+[info] 
+[info] i  Detected a .git folder at D:\git\portfolio 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=516240581&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-07-02T13:33:50.398Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-07-02T13:33:50.399Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-07-02T13:33:50.921Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-07-02T13:33:50.922Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-07-02T13:33:50.942Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-07-02T13:33:51.753Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-07-02T13:33:51.754Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"whitedevil9991","id":63239618,"node_id":"MDQ6VXNlcjYzMjM5NjE4","avatar_url":"https://avatars.githubusercontent.com/u/63239618?v=4","gravatar_id":"","url":"https://api.github.com/users/whitedevil9991","html_url":"https://github.com/whitedevil9991","followers_url":"https://api.github.com/users/whitedevil9991/followers","following_url":"https://api.github.com/users/whitedevil9991/following{/other_user}","gists_url":"https://api.github.com/users/whitedevil9991/gists{/gist_id}","starred_url":"https://api.github.com/users/whitedevil9991/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/whitedevil9991/subscriptions","organizations_url":"https://api.github.com/users/whitedevil9991/orgs","repos_url":"https://api.github.com/users/whitedevil9991/repos","events_url":"https://api.github.com/users/whitedevil9991/events{/privacy}","received_events_url":"https://api.github.com/users/whitedevil9991/received_events","type":"User","site_admin":false,"name":"Pilli Revant","company":"Tensile Tech","blog":"https://pillirevant.carrd.co/#home","location":"Visakhapatnam, Andhra Pradesh","email":null,"hireable":true,"bio":null,"twitter_username":"srkian99","public_repos":17,"public_gists":0,"followers":3,"following":10,"created_at":"2020-04-06T12:08:57Z","updated_at":"2023-06-28T12:08:33Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":9340,"collaborators":0,"two_factor_authentication":true,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as whitedevil9991 
+[info] 
+[debug] [2023-07-02T13:33:58.992Z] >>> [apiv2][query] GET https://api.github.com/repos/y/actions/secrets/public-key type=owner
+[debug] [2023-07-02T13:33:59.520Z] <<< [apiv2][status] GET https://api.github.com/repos/y/actions/secrets/public-key 404
+[debug] [2023-07-02T13:33:59.520Z] <<< [apiv2][body] GET https://api.github.com/repos/y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-07-02T13:34:02.979Z] >>> [apiv2][query] GET https://api.github.com/repos/yyes/actions/secrets/public-key type=owner
+[debug] [2023-07-02T13:34:03.307Z] <<< [apiv2][status] GET https://api.github.com/repos/yyes/actions/secrets/public-key 404
+[debug] [2023-07-02T13:34:03.308Z] <<< [apiv2][body] GET https://api.github.com/repos/yyes/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-07-02T13:34:05.190Z] >>> [apiv2][query] GET https://api.github.com/repos/yye/actions/secrets/public-key type=owner
+[debug] [2023-07-02T13:34:06.596Z] <<< [apiv2][status] GET https://api.github.com/repos/yye/actions/secrets/public-key 404
+[debug] [2023-07-02T13:34:06.597Z] <<< [apiv2][body] GET https://api.github.com/repos/yye/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-07-02T13:34:30.556Z] >>> [apiv2][query] GET https://api.github.com/repos/whitedevil9991/portfolio/actions/secrets/public-key type=owner
+[debug] [2023-07-02T13:34:31.514Z] <<< [apiv2][status] GET https://api.github.com/repos/whitedevil9991/portfolio/actions/secrets/public-key 404
+[debug] [2023-07-02T13:34:31.514Z] <<< [apiv2][body] GET https://api.github.com/repos/whitedevil9991/portfolio/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-07-02T13:35:20.909Z] >>> [apiv2][query] GET https://api.github.com/repos/whitedevil9991/portfolio/actions/secrets/public-key type=owner
+[debug] [2023-07-02T13:35:21.514Z] <<< [apiv2][status] GET https://api.github.com/repos/whitedevil9991/portfolio/actions/secrets/public-key 404
+[debug] [2023-07-02T13:35:21.514Z] <<< [apiv2][body] GET https://api.github.com/repos/whitedevil9991/portfolio/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-07-02T13:35:25.847Z] >>> [apiv2][query] GET https://api.github.com/repos/whitedevil9991/portfolio/actions/secrets/public-key type=owner
+[debug] [2023-07-02T13:35:26.164Z] <<< [apiv2][status] GET https://api.github.com/repos/whitedevil9991/portfolio/actions/secrets/public-key 404
+[debug] [2023-07-02T13:35:26.164Z] <<< [apiv2][body] GET https://api.github.com/repos/whitedevil9991/portfolio/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 

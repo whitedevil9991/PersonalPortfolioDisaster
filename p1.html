@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Portfolio</title>
+<!--external files-->
+<link rel="stylesheet" href="p1.css">
+<script src="p1.js"></script>
+<!--CDNs-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script>
+  function scrollToSection(sectionId) {
+    var div = document.getElementById(sectionId);
+    div.scrollIntoView({ behavior: "smooth" });
+  }
+</script>
+
+</head>
+<body>
+  <!--nav bar-->
+<nav>
+<div class="name">
+  <h2>REVANT</h2>
+</div>  
+<ul>
+<li><a href="#about" class="text-color" id="nav-bar">About</a></li>
+<li><a href="#projects" class="text-color" id="nav-bar">Projects</a></li>
+<li><a href="#skills" class="text-color" id="nav-bar">Skills</a></li>
+<li><a href="#myjourney" class="text-color" id="nav-bar">My Journey</a></li>
+<li><a href="#contact" class="text-color" id="nav-bar">Contact</a></li>
+</ul>
+</nav>
+<main>
+  <!----------------------------------------------------------------------->
+<!--first page-->
+  <div class="row container1" alt="about">
+    <div class="col-md-9">
+    <div class="texta">
+      <p>Hello, I am</p>
+    </div>
+    <div class="text">
+      <p><b>< Pilli Revant Krishna Sagar /></b></p>
+    </div>
+    <div class="textb">
+      <p><b>Fullstack Developer</b></p>
+    </div>
+    <div class="sub1">
+    <div class="num1">
+      <p>1</p>
+    </div>
+    <div class="text1">
+      <p>YEARS OF EXPERIENCE</p>
+    </div>
+    <div class="num2">
+      <p>4</p>
+    </div>
+    <div class="text2">
+      <p>PROJECTS COMPLETED AROUND THE WORLD</p>
+    </div>
+  </div>
+    </div>
+
+  <!--images-->
+  <div class="col-md-3">
+  <img src="assets/revant photo.jpg"  class="myimage" alt="circular image">
+  </div>
+
+  <!--bottom email-->
+<div class="emailer">
+  <p>revanth.pilli@yahoo.com ------------</p>
+</div>
+</div>
+  </div>
+
+
+<!--------------------------------------------------------------------------->
+  <!--second page-->
+  <div class="container2" alt="projects">
+    <div class="text">
+      <p> AboutMe( )</p>
+    </div>
+    <div class="explain">
+      <p>A mechanical engineer turned developer with hands on experience
+        on front end development, Linux, Java, Low code application
+        development platforms. 
+      </p>
+    </div>
+
+   <div class="boxx">
+     <!--first rectangle box-->
+     <div class="box1">
+      <div class="text1">
+        <h3>Inventory Management App</h3>
+      </div>
+      <div class="text2">
+        <p>This is an app created using an low code platform to assist businesses to manage their inventories</p>
+      </div>
+    </div>
+    <!--second rectangle box-->
+    <div class="box2">
+      <div class="text1">
+        <h3>Creating a local server</h3>
+      </div>
+      <div class="text2">
+        <p>Created a local server using an Old PC with linux, able to access files of all sizes seamlessly, across all devices connected in the local wifi.</p>
+      </div>
+    </div>
+   </div>
+
+  </div>
+  <!---------------------------------------------------------------------------------->
+<!--third page-->
+<div class="container3">
+  <div class="text">
+    <p>Projects( )</p>
+  </div>
+
+
+  <!--scroll-->
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="assets/localserver.jpg">
+        <img src="assets/localserver.jpg" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">I implemented a local server file transfer network, facilitating data exchange among wireless devices and my desktop within the 
+        same network, using improved methods to connect things together. </div>
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="assets/appbuild.png">
+        <img src="assets/appbuild.png" alt="Forest" width="600" height="400">
+      </a>
+      <div class="desc">I created a tool for websites that help businesses manage their inventory and track new orders within a specific time frame. I 
+        used Zoho App Creator to develop this tool.</div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="assets/carconv.jpg">
+        <img src="assets/carconv.jpg" alt="Northern Lights" width="600" height="400">
+      </a>
+      <div class="desc">The goal of this project is to convert old, unused fuel-powered cars into electric vehicles with minimal modifications and at a low 
+        cost. I was responsible for the fabrication of the vehicle and sourcing of the materials.</div>
+    </div>
+  </div>
+ 
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="assets/website.jpg">
+        <img src="assets/website.jpg" alt="Northern Lights" width="600" height="400">
+      </a>
+      <div class="desc">Developed a responsive website using HTML, CSS, Js, Bootstrap, other front end technologies and other low code platforms.
+         </div>
+    </div>
+  </div>
+  
+  
+</div>
+<!---------------------------------------------------------------------------->
+  <!--fourth page = skills-->
+  <div class="container4" >
+    <div class="text">
+      <p>Skills( )</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"><a href="" class="box11"><img src="assets/css3.jpg" alt=""></a></div>
+        <div class="col-md-3"><a href="" class="box11" ><img src="assets/html5.jpg" alt=""></a></div>
+          <div class="col-md-3"><a href="" class="box11" ><img src="assets/javascript.jpg" alt=""></a></div>
+    <div class="col-md-3"> <a href="" class="box11" ><img src="assets/react.jpg" alt=""></a></div>   
+  </div>
+
+    </div>
+    <!--------------------------------------------------------------------------------->
+  <!--fifth page - my journey-->
+  
+  <div class="container5" >
+    <p class="text">My <br>Journey( )</p>  
+
+    <div class="card-container">
+      <div class="card">
+        <h2 style="color: #70ff00;">B.Tech</h2>
+        <p>
+          <span class="info-line"><span>Name:</span> Revant Krishna</span>
+          <span class="info-line"><span>Department:</span> Mechanical Engineering</span>
+          <span class="info-line"><span>Year of passing:</span> 2021</span>
+          <span class="info-line"><span>College:</span> VIIT</span>
+          <span class="info-line"><span>CGPA:</span> 6.42</span>
+        </p>
+      </div>
+      <div class="card">
+        <h2 style="color: #70ff00;">Secondary Education</h2>
+        <p>
+          <span class="info-line"><span>Name:</span> Revant Krishna</span>
+          <span class="info-line"><span>Department:</span> Mechanical Engineering</span>
+          <span class="info-line"><span>Year of passing:</span> 2021</span>
+          <span class="info-line"><span>College:</span> VIIT</span>
+          <span class="info-line"><span>CGPA:</span> 6.42</span>
+        </p>
+      </div>
+      <div class="card">
+        <h2 style="color: #70ff00;">Primary Education</h2>
+        <p>
+          <span class="info-line"><span>Name:</span> Revant Krishna</span>
+          <span class="info-line"><span>Department:</span> Mechanical Engineering</span>
+          <span class="info-line"><span>Year of passing:</span> 2021</span>
+          <span class="info-line"><span>College:</span> VIIT</span>
+          <span class="info-line"><span>CGPA:</span> 6.42</span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+  <!-------------------------------------------------------------->
+  <!--sixth page-->
+  <div class="container6" alt="skills">
+    <div class="text">
+<p>Get In Touch( )</p>      
+    </div>
+
+    <!--boxes-->
+
+    <div class="responsive2">
+      <div class="gallery">
+        <a target="_blank" href="assets/6gmail.jpg">
+          <img src="assets/6gmail.jpg" href="revanth.pilli@gmail.com" alt="gmail" width="600" height="400">
+        </a>
+      <div class="desc">Gmail</div>
+      </div>
+    </div>
+    
+    <div class="responsive2">
+      <div class="gallery">
+        <a target="_blank" href="assets/6linkedin.jpg">
+          <img src="assets/6linkedin.jpg" href="inkedin.com/in/pilli-revant-krishna-sagar-3200b4112/" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Linkedin</div>
+      </div>
+    </div>
+   
+    <div class="responsive2">
+      <div class="gallery">
+        <a target="_blank" href="assets/6mobile.jpg">
+          <img src="assets/6mobile.jpg" href="9849573996" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Mobile
+           </div>
+      </div>
+    </div>
+
+    
+  </div>
+  
+
+</main>
+<script>
+function scrollToSection(sectionId) {
+  var div = document.getElementById(sectionId);
+  div.scrollIntoView({ behavior: "smooth" });
+}
+</script>
+</body>
+</html>
+
+
+
+

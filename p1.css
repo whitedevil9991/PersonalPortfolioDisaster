@@ -1,0 +1,498 @@
+/*nav bar */
+nav {
+background: rgb(0, 0, 0);    
+padding-left: 30%;
+position: sticky;
+width: 100%;
+height: 56px;
+left: 0px;
+top: 0px;
+color: white;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline-flex;
+    margin-right: 10px;
+    float: right;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    float:right;
+  }
+
+/*nav REVANT*/
+/*Revant*/
+nav .name{
+  position: absolute;
+  width: 10%;
+  height: 5.4%;
+  left: 3%;
+  top: 0.3%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-transform: uppercase;
+ 
+}
+
+nav .about{
+width: 100%;
+height: 28px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+
+}
+
+#nav-bar
+{
+  color: white;
+  padding: 7px 30px 0px 0px;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+#nav-bar:link{
+  text-decoration: none;
+}
+
+#nav-bar:hover{
+  color: rgb(89, 207, 114);
+}
+/*---------------------------------------------------------------------*/
+ /*first page-about*/
+
+ .container1{
+    display: flex;
+    align-items: center;
+    padding: 350px 300px 100px 100px;
+    background: linear-gradient(116.82deg, #000000 12.5%, rgba(23, 23, 23, 0.73349) 99.98%, rgba(39, 39, 39, 0.552315) 99.99%, rgba(0, 0, 0, 0) 100%);    
+    height: 1000px;
+    margin-bottom: 2px;
+  }
+  
+  /* images*/
+
+  .myimage{
+  width: 500px;
+  height: 450px ;
+  padding-right: 00px;
+  margin-top: -400px;
+  border-radius: 50%;
+  position: relative;
+ }
+  
+  .container1 .texta{
+    /* Hello, i am */
+    
+margin-top: -500px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+
+color: #E0E0E0;
+  }
+
+  .container1 .textb{
+    /* Fullstack Developer */
+width: 504px;
+height: 67px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 57px;
+line-height: 550px;
+color: #b1b1b1;
+  }
+
+  .container1 .text {
+/*<Pilli Revant Krishna Sagar>*/
+position: absolute;
+width: 726px;
+height: 182px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 78px;
+
+letter-spacing: 0.1em;
+color: #70FF00;
+  }
+
+  .container1 .sub1 .num1{
+    /* 1 */
+        position: absolute;
+        height: 101px;
+        width: 50px;
+        left: 109px;
+        top: 666px;
+        font-family: Roboto;
+        font-size: 86px;
+        font-weight: 700;
+        line-height: 100.78px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #4F4F4F;
+        margin-top: -700px;
+  }
+
+  .container1 .sub1 .text1{
+    /* years of experience */
+position: absolute;
+width: 157px;
+height: 64px;
+left: 172px;
+top: 685px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 27px;
+line-height: 32px;
+text-transform: uppercase;
+color: #828282;
+margin-top: -700px;
+  }
+
+  .container1 .sub1 .num2 {
+    /*4*/
+position: absolute;
+width: 50px;
+height: 101px;
+left: 422px;
+top: 666px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 86px;
+line-height: 101px;
+margin-top: -700px;
+color: #4F4F4F;
+  }
+
+  .container1 .sub1 .text2{
+    /*projects completed around the world*/
+      position: absolute;
+      width: 275px;
+      height: 58px;
+      left: 492px;
+      top: 688px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 25px;
+      margin-top: -700px;
+      line-height: 29px;
+      text-transform: uppercase;
+      color: #828282;
+  }
+
+.container1 .emailer {
+  position: fixed;
+  font-size: 20px;
+  color: #70FF00;
+  font-family: 'Times New Roman', Times, serif;
+  padding-left: 75%;
+  padding-top: 25%;
+}
+
+/*-------------------------------------------------------------------*/
+  /*second page-about*/
+ .container2 {
+  background: linear-gradient(89.77deg, #000000 -2.98%, rgba(37, 37, 37, 0.573349) 98.12%, rgba(39, 39, 39, 0.552315) 103.1%, rgba(0, 0, 0, 0) 103.1%);
+  height: 1024px;
+  width: 100%;
+  padding-left: 80px;
+
+  margin-bottom: 2px;
+  
+  }
+  
+  .container2 .text {
+    /*text*/
+    display: flex;
+    padding-top: 5%;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #70FF00;
+    font-size: 49px;
+    font-family: Roboto;
+    font-weight: 700;
+    position:relative;
+    top: 0px;
+  }
+  
+  .container2 .explain {
+  /*explain*/
+    display: flex;
+    width: 759.834px;
+    height: 265.073px;
+    padding-top: 2%;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: var(--gray-6, #F2F2F2);
+    font-size: 29px;
+    font-family: Roboto;
+    position: relative;
+    top: 46px;
+  }
+  
+
+  .container2 .box1 {
+    font-family: Courier Prime;
+    color: white;
+    position: relative;
+    
+    /* For viewport widths of 768px or more */
+    @media (min-width: 768px) {
+      width: 566.639px;
+      height: 137px;
+      flex-shrink: 0;
+      border-radius: 6px;
+      background: var(--gray-2, #4F4F4F);
+      box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
+      float: right;
+    }
+  }
+  
+  .container2 .box2 {
+    font-family: Courier Prime;
+    color: white;
+
+    /* For viewport widths of 768px or more */
+    @media (min-width: 768px) {
+      width: 566.639px;
+      height: 137px;
+      flex-shrink: 0;
+      border-radius: 6px;
+      background: var(--gray-2, #4F4F4F);
+      box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
+      float: right;
+    }
+  
+    /* For viewport widths of 576px to 767px */
+    @media (min-width: 576px) and (max-width: 767px) {
+      width: 90%;
+      height: 118px;
+      flex-shrink: 0;
+      border-radius: 4px;
+      background: var(--gray-2, #4F4F4F);
+      box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.2);
+      float: right;
+    } 
+  }
+
+  .boxx {
+    padding-top: 20%;
+  }
+  /*------------------------------------------------------------------------------*/
+  /*third page-about*/
+ .container3 {
+  background: linear-gradient(89.77deg, #000000 -2.98%, rgba(37, 37, 37, 0.573349) 98.12%, rgba(39, 39, 39, 0.552315) 103.1%, rgba(0, 0, 0, 0) 103.1%);
+  height: 1024px;
+  color: white;
+  margin-bottom: 2px;
+  
+
+  }
+
+  .container3 .text{
+   /*text*/
+   display: flex;
+   color: #70FF00;
+   font-size: 49px;
+   font-family: Roboto;
+   font-weight: 700;
+   padding-top: 5%;
+   padding-left: 80px;
+
+   
+  }
+  
+  /*scroll*/
+
+  div.gallery {
+    border: 1px solid #ccc;
+    margin-top: 200px;
+
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;  
+    width: 24.99999%;
+    box-sizing: border-box;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+
+  
+/*--------------------------------------------------------------------*/
+  /*fourth page-about*/
+ .container4 {
+    display: flex;
+    background: #000000;
+    margin-bottom: 2px;
+    height: 1024px;
+    padding-left: 80px;
+  }
+
+  .container4 .text{
+    /*text*/
+    display: flex;
+    width: 252.946px;
+    height: 46px;
+    flex-direction: column;
+    color: #70FF00;
+    font-size: 49px;
+    font-family: Roboto;
+    font-weight: 700;
+    position:relative;
+    padding-top: 5%;
+  }
+  
+  .container4 img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .container4 .row{
+    padding: 15% 10% 0% 0%; /*top bottom left right*/
+  }
+
+
+  /*--------------------------------------------*/
+
+  /*fifth page-my journey*/
+  
+ .container5 {
+    background: #000000;
+    height: 1024px;
+    width: 100%;
+    margin-bottom: 2px;
+    padding-left: 80px;
+
+  }
+  .container5 .text{
+    /*text*/
+    display: flex;
+    color: #70FF00;
+    font-size: 49px;
+    font-family: Roboto;
+    font-weight: 700;
+    position:relative;
+    padding-top: 5%;
+    }
+
+    /*cards*/
+
+    .card {
+      width: 400px;
+      height: 200px;
+      background-color: lightgray;
+      margin-right: 40px;
+      display: inline-block;
+      text-align: left;
+      padding: 20px;
+      border: 1px solid #439900;
+      box-shadow: #70FF00;
+    }
+    
+    .card-container {
+      display: flex;
+    }
+    
+    .card:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    .container5 .p {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      text-align: center;
+    }
+    
+    .info-line {
+      display: flex;
+      justify-content:space-between;
+    }
+/*-----------------------------------------------*/
+  /*sixth page-get in touch*/
+ .container6 {
+    display: flex;
+    background: linear-gradient(89.77deg, #000000 -2.98%, rgba(37, 37, 37, 0.573349) 98.12%, rgba(39, 39, 39, 0.552315) 103.1%, rgba(0, 0, 0, 0) 103.1%);
+    height: 1024px;
+    color: #70FF00;
+    padding-left: 80px;
+
+
+  }
+
+  .container6 .text{
+    /*text*/
+    color: #70FF00;
+    font-size: 49px;
+    font-family: Roboto;
+    font-weight: 700;
+    position:relative;
+    padding-top: 5%;
+    }
+
+    /*boxes*/
+    .container6 .responsive2 {
+      padding-top: 10%; 
+      width: 210px;
+      height: 210px;
+      box-sizing: border-box;
+      padding: 0px 40px;      
+    }
+    
+    @media only screen and (max-width: 700px) {
+      .responsive2 {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+    
+    @media only screen and (max-width: 500px) {
+      .responsive2 {
+        width: 100%;
+      }
+    }
+  
